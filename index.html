@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA to Percentage Converter</title> 
+    <link rel="stylesheet" href="style.css" />  
+    <link rel="stylesheet" href="style.css" />  
+
+</head>
+<body>
+    <div class="container">
+        <h2>CGPA to Percentage Converter</h2>
+
+        <!-- Dropdown for University Selection -->
+        <div class="field">
+            <label for="university">Select University:</label>
+            <select id="university">
+                <option value="select">--Select University--</option>
+                <option value="universityA">Central Board of Secondary Education (CBSE)</option>
+                <option value="universityB">Gujarat Technological University (GTU)</option>
+                <option value="universityC">Visvesvaraya Technological University (VTU)</option>
+                <option value="universityD">Delhi University (DU)</option>
+                <option value="universityE">Mumbai University (MU)</option>
+                <option value="universityF">Kerala Technological University (KTU)</option>
+                <option value="universityG">Maulana Abul Kalam Azad University of Technology</option>
+            </select>
+            <div id="validationMessage" style="padding-top: 8px; color: red; display: none;">
+                Please select a university
+            </div>
+        </div>
+
+        <!-- Input for CGPA -->
+        <div class="field">
+            <label for="cgpa">Enter CGPA:</label>
+            <input class="text-field" type="number" id="cgpa" step="0.01" min="0" max="10">
+            <div id="validationMessageCgpa" style="padding-top: 8px; color: red; display: none;">
+                Enter a valid CGPA
+            </div>
+        </div>
+
+        <!-- Readonly Input for Converted Percentage -->
+        <div class="field">
+            <label for="percentage">Converted Percentage(%):</label>
+            <input class="text-field" type="text" id="percentage" readonly>
+        </div>
+
+        <!-- Button to Convert -->
+        <button onclick="convertToPercentage()">Convert</button>
+    </div>
+
+    <!-- JavaScript for Conversion Logic -->
+    <script src="script.js"></script>
+</body>
+</html>

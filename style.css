@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+
+.container {
+    max-width: 420px;
+    margin: auto;
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+.text-field{
+    width:400px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
